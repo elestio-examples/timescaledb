@@ -1,6 +1,6 @@
 # TimescaleDB on Elestio with CI/CD
 
-<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/docker-compose-timescaledb"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
+<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/timescaledb"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
 Example CI/CD pipeline showing how to deploy a TimescaleDB instance to elestio.
 
