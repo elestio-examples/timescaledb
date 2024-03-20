@@ -1,11 +1,10 @@
-version: '3'
+version: "3"
 services:
-
   postgres:
     image: timescale/timescaledb:${SOFTWARE_VERSION_TAG}
     restart: always
     #command: -c ssl=on -c ssl_cert_file=/var/lib/postgresql/data/server.crt -c ssl_key_file=/var/lib/postgresql/data/server.key
-    
+
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
@@ -13,9 +12,9 @@ services:
       PGDATA: /var/lib/postgresql/data
       TS_TUNE_MAX_CONNS: 100
     volumes:
-      - ./data:/var/lib/postgresql/data   
+      - ./data:/var/lib/postgresql/data
     ports:
-      - '172.17.0.1:5432:5432'
+      - "172.17.0.1:5432:5432"
 
   pgadmin4:
     image: dpage/pgadmin4:latest

@@ -22,6 +22,8 @@ environments:
     value: "[EMAIL]"
   - key: "ADMIN_PASSWORD"
     value: "random_password"
+  - key: "CNAME"
+    value: "[CI_CD_DOMAIN]"
 config:
   runTime: "dockerCompose"
   version: ""
@@ -42,4 +44,4 @@ webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "pgAdmin"
     login: "[ADMIN_EMAIL]"
-    password: "[ADMIN_PASSWORD]"  
+    password: "[ADMIN_PASSWORD]"
