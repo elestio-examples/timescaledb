@@ -15,7 +15,7 @@ ports:
     public: true
 environments:
   - key: "SOFTWARE_VERSION_TAG"
-    value: "latest-pg14"
+    value: "latest-pg16"
   - key: "SOFTWARE_PASSWORD"
     value: "random_password"
   - key: "ADMIN_EMAIL"
