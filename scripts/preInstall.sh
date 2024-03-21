@@ -25,7 +25,7 @@ cat <<EOT > ./servers.json
 EOT
 
 docker-compose up -d;
-sleep 20s;
+sleep 30s;
 docker-compose down
 sed -i 's/#command:/command:/' docker-compose.yml
 
