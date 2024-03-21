@@ -7,8 +7,8 @@
 # sed --debug  -i '/^\s*# command/s/# //' ./docker-compose.yml
 # docker-compose up -d;
 
-docker-compose down
-sleep 15s;
-sed --debug  -i '/^\s*# command/s/# //' ./docker-compose.yml
-sleep 20s;
-docker-compose up -d;
+# docker-compose down
+# sleep 15s;
+# sed --debug  -i '/^\s*# command/s/# //' ./docker-compose.yml
+# sleep 20s;
+# docker-compose up -d;
