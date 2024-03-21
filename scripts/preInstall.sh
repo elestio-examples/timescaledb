@@ -27,5 +27,5 @@ EOT
 docker-compose up -d;
 sleep 20s;
 docker-compose down
-sed --debug -i 's/#//g' ./docker-compose.yml 
 openssl req -new -x509 -days 3650 -nodes -text -out ./data/server.crt -keyout ./data/server.key -subj "/CN=${CNAME}"
+sed --debug -i 's/#//g' ./docker-compose.yml
