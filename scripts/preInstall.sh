@@ -25,7 +25,7 @@ cat <<EOT > ./servers.json
 EOT
 
 docker-compose up -d;
-sleep 30s;
+sleep 20s;
 docker-compose down
-sed -i 's/#//g' ./docker-compose.yml
+sed --debug -i 's/#//g' ./docker-compose.yml 
 openssl req -new -x509 -days 3650 -nodes -text -out ./data/server.crt -keyout ./data/server.key -subj "/CN=${CNAME}"
